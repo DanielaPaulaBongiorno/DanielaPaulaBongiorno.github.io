@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi Portfolio</title>		
+</head>
+<style>
+	@keyframes tipsy {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+
+
+a {
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 60px; 
+  text-decoration: none;
+  letter-spacing: 10px;
+  padding-top: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+margin-left: auto; 
+
+margin-right: auto;
+}
+
+a:before,
+a:after {
+  content: '';
+  padding: .9em .2em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 5px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+  margin-top: 70px;
+  
+
+}
+
+a:before {
+  border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+a:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+  box-shadow: 10px 10px 10px rgba(46, 46, 49, .8);
+}
+.nombre{
+	
+	color: #fffbf1;
+  	text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  	
+  	text-align: center;
+  	text-decoration: none;
+  	letter-spacing: 10px;
+  	margin-top: 40px;
+  	text-align: center;
+  	color:white;
+  }
+.contacto {
+  padding: .375rem .75rem;
+  margin: 350px 0px 20px 70px;
+  padding:10px 10px 10px 10px;
+  border: 1px solid #fff;
+  border-radius: .25rem;
+  color: black;
+  font-family: serif;
+  color:black;
+  font-size: 20px;
+  transition: color .15s ease-in-out,
+  background-color .15s ease-in-out;
+}
+p {
+			color: white;
+			text-transform: uppercase;
+			letter-spacing: .5em;
+			display: inline-block;
+			padding: 1.5em 0em;
+      margin-bottom: 35px;
+			position: absolute;
+			top: 10%;
+			left: 50%;
+			width: 40em;
+			margin: 0 0 0 -20em;
+			text-align: center;	
+		}
+.contacto:hover, .btn-borde:active, .btn-borde:focus {
+  color: #fff;
+  background-color: #b24a44;
+}
+.linea{
+	margin-top: 45px;
+
+}
+.linea2{
+	margin-top: 100px;
+}
+</style>
+<body bgcolor="black">
+	<hr class="linea" size="3px" color=#b24a44 width="80%"/>
+	<p>Daniela Paula Bongiorno
+	</p>
+	<hr class="linea2" size="3px" color=#b24a44 width="80%"/>
+
+
+
+	<a id="centro" href="portfolio.html">Mi Portfolio</a>
+
+	<div>
+  <button class="contacto" style="cursor:pointer;" onclick="location.href='contacto.html'" >Contacto</button>
+</div>
+
+</body>
+</html>
