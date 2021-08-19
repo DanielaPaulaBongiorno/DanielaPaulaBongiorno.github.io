@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi Portfolio</title>
+	<style>
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color:white;
+}
+form li + li {
+  margin-top: 1em;
+  color:white;
+  width: 150%;
+  height: 150%;
+}
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+.name{
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: serif;
+}
+.mail{
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: serif;
+}
+.msg{
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: serif;
+}
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+.button {
+  padding-left: 90px; 
+}
+button {
+  margin-left: .5em;
+}
+p{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  padding: 1.5em 0em;
+  margin-bottom: 35px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+  text-align: center; 
+}
+.volver {
+  padding: .375rem .75rem;
+  margin: 0px 30px 0px 70px;
+  padding:10px 10px 10px 10px;
+  border: 1px solid #fff;
+  border-radius: .25rem;
+  color: black;
+  font-family: serif;
+  color:black;
+  font-size: 20px;
+  transition: color .15s ease-in-out,
+  background-color .15s ease-in-out;
+}
+.volver:hover, .btn-borde:active, .btn-borde:focus {
+  color: #fff;
+  background-color: #b24a44;
+}
+.envio{
+  padding: .375rem .75rem;
+  margin: 30px 30px 0px 70px;
+  padding:10px 10px 10px 10px;
+  border: 1px solid #fff;
+  border-radius: .25rem;
+  color: black;
+  font-family: serif;
+  color:black;
+  font-size: 20px;
+  transition: color .15s ease-in-out,
+  background-color .15s ease-in-out;
+}
+.envio:hover, .btn-borde:active, .btn-borde:focus {
+  color: #fff;
+  background-color: #b24a44;
+}
+.linea{
+  margin-top: 45px;
+}
+.linea2{
+  margin-top: 100px;
+}
+.lista{
+  text-align: center;
+  width: 80em;
+}
+</style>
+</head>
+<body bgcolor="black">
+  <hr class="linea" size="3px" color=#b24a44 width="80%"/>
+<p>
+  Contacto
+</p>
+<hr class="linea2" size="3px" color=#b24a44 width="80%"/>
+<form action="codigo.php" method="post">
+<ul >
+  <li>
+    <label class="name" for="name">Nombre:</label>
+    <input type="text" class="name" name="user_name">
+  </li>
+  <li><center>
+    <label class="mail" for="mail">Email</label>
+    <input type="text" class="mail" name="user_mail" >
+    
+  </li>
+  <li>
+    <label class="msg" for="msg">Mensaje:</label>
+    <textarea type="text" class="msg" name="user_message"></textarea>
+  </li>
+  <li>
+    <button type="submit" class="envio" onclick="location.href='Enviado'" >Enviar</button>
+  </li>
+</ul>
+</form>
+<div>
+  <button class="volver" style="cursor:pointer;" onclick="location.href='index.html'">Volver</button>
+</div>
+</body>
+</html>

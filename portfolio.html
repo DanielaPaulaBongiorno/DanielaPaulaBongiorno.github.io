@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi Portfolio</title>
+	<style>
+    .landing{
+      color: white;
+      text-align: center; 
+      font-family: serif;
+      letter-spacing: .5em;
+      padding-top: 30px;
+      font-size: 10px;
+      text-transform: uppercase;
+      
+    }
+		p {
+			color: white;
+			text-transform: uppercase;
+			letter-spacing: .5em;
+			display: inline-block;
+			padding: 1.5em 0em;
+      margin-bottom: 35px;
+			position: absolute;
+			top: 10%;
+			left: 50%;
+			width: 40em;
+			margin: 0 0 0 -20em;
+			text-align: center;	
+		}
+		@keyframes tipsy {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+.b{ 
+    padding-bottom: 130px;
+} 
+
+
+.volver {
+  padding: .375rem .75rem;
+  margin: 0px 0px 20px 70px;
+  border: 1px solid #fff;
+  border-radius: .25rem;
+  color: black;
+  font-family: serif;
+  color:black;
+  font-size: 20px;
+  transition: color .15s ease-in-out,
+  background-color .15s ease-in-out;
+}
+
+.volver:hover, .btn-borde:active, .btn-borde:focus {
+  color: #fff;
+  background-color: #b24a44;
+}
+.linea{
+  margin-top: 45px;
+
+}
+.linea2{
+  margin-top: 100px;
+}
+	</style>
+</head>
+<body bgcolor="black">
+
+  <hr class="linea" size="3px" color=#b24a44 width="80%"/>
+<p>
+  Daniela Paula Bongiorno
+</p>
+<hr class="linea2" size="3px" color=#b24a44 width="80%"/>
+
+<div><center>
+  
+  <div class="landing">
+    <h1 >Calculadora</h1> 
+    <img src="images/calculadora.png" style="cursor:pointer;" target="_blank" onclick="window.open('https://od.lk/f/NTRfMjE5MTQ5OTNf', 'width=800,height=600');"/></a><br> 
+    
+  </div>
+  <div class="landing">
+    <h1>Proyecto Web </h1> 
+    <img src="images/ejemplo.png" style="cursor:pointer;" target="_blank" onclick="window.open('https://danielabongiorno.000webhostapp.com/index.html');"/><br> 
+    
+  </div> 	
+  <div class="landing">
+    <h1>Página Web activa</h1> 
+    <img class="b" src="images/ejemplo2.png" style="cursor:pointer;" target="_blank" onclick="window.open('https://xn--diseosdelbosque-1qb.com.ar/wp/');"/><br> 
+    
+  </div>
+</div>
+</center><div>
+  <button class="volver" style="cursor:pointer;" onclick="location.href='index.html'">Volver</button>
+</div>
+
+</body>
+</html>
